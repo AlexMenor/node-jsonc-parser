@@ -335,9 +335,9 @@ export function createScanner(text: string, ignoreTrivia: boolean = false): JSON
 					value = text.substring(tokenOffset, pos);
 					// keywords: true, false, null
 					switch (value) {
-						case 'true': return token = SyntaxKind.TrueKeyword;
-						case 'false': return token = SyntaxKind.FalseKeyword;
-						case 'null': return token = SyntaxKind.NullKeyword;
+						case 'True': return token = SyntaxKind.TrueKeyword;
+						case 'False': return token = SyntaxKind.FalseKeyword;
+						case 'None': return token = SyntaxKind.NullKeyword;
 					}
 					return token = SyntaxKind.Unknown;
 				}
